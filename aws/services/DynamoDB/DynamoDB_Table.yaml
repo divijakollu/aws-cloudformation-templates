@@ -39,6 +39,7 @@ Resources:
   myDynamoDBTable:
     Type: AWS::DynamoDB::Table
     Properties:
+      TableName: AuthorsTable_prod
       AttributeDefinitions:
       - AttributeName: !Ref 'HashKeyElementName'
         AttributeType: !Ref 'HashKeyElementType'
